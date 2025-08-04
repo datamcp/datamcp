@@ -15,7 +15,8 @@ spec:
     spec:
       containers:
       - name: api
-        image: erezalster/datamcp:0.0.2
+        #take from kustomize
+        image: ${IMAGE_NAME}:${IMAGE_TAG}
         imagePullPolicy: Always
         ports:
         - containerPort: 80

@@ -1,7 +1,7 @@
 # Makefile for DataMCP project
 
 # Variables
-IMAGE_TAG := 0.0.2
+IMAGE_TAG := 0.0.3
 IMAGE_NAME := erezalster/datamcp
 CONTAINER_NAME := datamcp
 
