@@ -1,0 +1,27 @@
+kind: Ingress
+apiVersion: networking.k8s.io/v1
+metadata:
+  name: datamcp-ingress
+  annotations:
+    acme.cert-manager.io/http01-edit-in-place: "true"
+    cert-manager.io/issuer: letsencrypt-prod
+    ingress.kubernetes.io/ssl-redirect: "True"
+  namespace: datamcp
+spec:
+  ingressClassName: nginx
+  tls:
+    - hosts:
+        - datamcp.io
+        - www.datamcp.io
+      secretName: datamcp-tls
+  rules:
+    - host: datamcp.io
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: datamcp-api
+                port:
+                  number: 3000
