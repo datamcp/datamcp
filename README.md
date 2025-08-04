@@ -38,7 +38,6 @@ To integrate DataMCP with Cursor, add the following configuration to your `~/.cu
 
 - **PostgreSQL**: `postgresql://user:pass@host:port/database`
 - **MySQL**: `mysql://user:pass@host:port/database` 
-- **SQLite**: `sqlite:///path/to/database.db`
 - **SQL Server**: `mssql://user:pass@host:port/database`
 
 ### Usage in Cursor
