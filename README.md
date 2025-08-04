@@ -17,10 +17,10 @@ To integrate DataMCP with Cursor, add the following configuration to your `~/.cu
 ```json
 {
   "mcpServers": {
-    "datame-mcp-server": {
+    "northwind-database": {
       "url": "https://datamcp.io/mcp",
       "headers": {
-        "connectionstring": "postgresql://user:pass@host:port/database"
+        "connectionstring": "postgresql://postgres:postgres@northwind-database:5432/northwind"
       }
     }
   }

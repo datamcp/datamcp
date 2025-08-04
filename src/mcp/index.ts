@@ -10,7 +10,7 @@ import { convertToCSV } from './formatUtils';
 
 const getServer = (connectionString: string) => {
     const mcpServer = new McpServer({
-        name: 'datame-mcp-server',
+        name: 'datamcp-server',
         version: '1.0.0',
         tools: []
     });
