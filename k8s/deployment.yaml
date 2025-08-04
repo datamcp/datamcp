@@ -15,7 +15,8 @@ spec:
     spec:
       containers:
       - name: api
-        image: erezalster/datamcp:latest
+        image: erezalster/datamcp:0.0.1
+        imagePullPolicy: Always
         ports:
         - containerPort: 80
         resources:
