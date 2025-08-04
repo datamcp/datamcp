@@ -1,7 +1,7 @@
 # Makefile for DataMCP project
 
 # Variables
-IMAGE_TAG := 0.0.1
+IMAGE_TAG := 0.0.2
 IMAGE_NAME := erezalster/datamcp
 CONTAINER_NAME := datamcp
 
@@ -28,6 +28,9 @@ install:
 # Start application in production mode
 start: build
 	npm start
+
+start-frontend:
+	npm run dev:react
 
 # Start application in development mode
 start-dev:
