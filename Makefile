@@ -1,7 +1,7 @@
 # Makefile for DataMCP project
 
 # Variables
-IMAGE_TAG := 0.0.3
+IMAGE_TAG := 0.0.5
 IMAGE_NAME := erezalster/datamcp
 CONTAINER_NAME := datamcp
 
@@ -51,7 +51,7 @@ docker-build:
 docker-push:
 	docker push $(IMAGE_NAME):$(IMAGE_TAG)
 
-docker-all: docker-build docker-push
+docker-all: docker-build docker-push deploy-api
 
 # Run Docker container
 docker-run:

@@ -9,7 +9,7 @@ const SetupSection: React.FC = () => {
     "northwind-database": {
       "url": "https://datamcp.io/mcp",
       "headers": {
-        "connectionstring": "postgresql://postgres:postgres@northwind-database:5432/northwind"
+        "connectionstring": "postgresql://readonly_user:readonly@northwind.datamcp.io:5432/northwind"
       }
     }
   }
